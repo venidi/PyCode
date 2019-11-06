@@ -1,14 +1,14 @@
 import xlrd
 import xlwt
+import xlutils
 
-
-endFilePath = r'C:\Users\Veniendeavor\Desktop\execlTest\end.xls'
+endFilePath = r'C:\Users\Veniendeavor\Desktop\execlTest\end2019.xls'
 # sheetTest = open(r'C:\Users\Veniendeavor\Desktop\execlTest\sheetTest.txt', 'w')
-table = xlrd.open_workbook(r'C:\Users\Veniendeavor\Desktop\execlTest\2016-2017往来.xlsx')
-sheet2016 = table.sheet_by_name(r'2016年往来')
-sheet2017 = table.sheet_by_name(r'2017年往来')
-sheet2018 = table.sheet_by_name(r'2018年')
-sheet2019 = table.sheet_by_name(r'2019年')
+table = xlrd.open_workbook(r'C:\Users\Veniendeavor\Desktop\execlTest\new.xlsx')
+sheet2016 = table.sheet_by_name(r'2016')
+sheet2017 = table.sheet_by_name(r'2017')
+sheet2018 = table.sheet_by_name(r'2018')
+sheet2019 = table.sheet_by_name(r'2019')
 
 book = xlwt.Workbook()
 sheetNew = book.add_sheet('new')

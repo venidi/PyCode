@@ -20,3 +20,7 @@ def checksum(data):
     answer = ~sum & 0xffff
     answer = answer >> 8 | (answer << 8 & 0xff00)
     return answer
+
+if __name__ == '__main__':
+    i = input()
+    ping(i)
